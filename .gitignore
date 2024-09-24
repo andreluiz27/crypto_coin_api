@@ -1,11 +1,15 @@
-# all pyc files in this folder and subfolders
-
 *.pyc
 *.pyo
 *.pyd
 *.swp
 *.swo
 *.swm
-__pycache__/*
+
+.env
+.env.dev
+.env.prod
+
+# ignoring all files from __pycache__ folder
+__pycache__/
 
 

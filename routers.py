@@ -27,14 +27,17 @@ async def root():
 @cache(expire=60)
 async def fetch_crypto_data(crypto_symbol: str, request: Request, api_key: APIKey = Depends(get_api_key)):
     """
-    Fetch the cryptocurrency data from the API.
+    Fetches cryptocurrency data for a given symbol.
 
     Args:
         crypto_symbol (str): The symbol of the cryptocurrency.
+        request (Request): The request object.
+        api_key (APIKey, optional): The API key. Defaults to None.
 
     Returns:
-        dict: A dictionary containing the response from the API.
+        dict: The cryptocurrency data response.
     """
+
     crypto_data_response = await get_cryptocoin_data(
         crypto_symbol, request_client=request_client, api="mb-api"
     )
