@@ -1,0 +1,11 @@
+# all pyc files in this folder and subfolders
+
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.swm
+__pycache__/*
+
+

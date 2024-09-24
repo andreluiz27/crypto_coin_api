@@ -1,6 +1,7 @@
 motor==2.5.1
 uvicorn
 fastapi
+fastapi-simple-cache
 httpx
 pytest
 anyio
