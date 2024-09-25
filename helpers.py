@@ -93,7 +93,7 @@ async def convert_brl_to_usd(brl_value, request_client):
 
 
 async def get_api_key(api_key_header: str = Security(api_key_header)):
-    if api_key_header == os.getenv("API_KEY"):
+    if api_key_header == os.getenv("API_KEY",'452f7377b202e85cd6c34d2b4cbe43be'):
         return api_key_header   
     else:
         raise HTTPException(
