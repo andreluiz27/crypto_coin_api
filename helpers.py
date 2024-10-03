@@ -3,7 +3,6 @@ import os
 import datetime
 
 
-from database import forecast_collection
 from schemas import CryptoDataResponse
 from fastapi import Security, HTTPException, Depends
 from fastapi.security.api_key import APIKeyHeader
